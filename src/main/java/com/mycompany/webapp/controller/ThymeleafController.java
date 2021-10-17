@@ -82,4 +82,10 @@ public class ThymeleafController {
 		model.addAttribute("board", board);
 		return "thymeleaf/selectionVariableExpressions";
 	}
+	
+	@RequestMapping("/messageExpressions")
+	public String messageExpressions() {
+		log.info("실행");
+		return "thymeleaf/messageExpressions";
+	}
 }
